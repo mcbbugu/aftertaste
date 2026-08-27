@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexusForge — The Future of Productivity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --accent: #6366f1; --radius: 16px; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      color: #111827;
+      background: #ffffff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header.hero, section, footer {
+      padding: 96px 24px;
+      animation: fadeIn 0.8s ease both;
+    }
+    header.hero {
+      text-align: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+    }
+    h1 { font-family: Inter, system-ui, sans-serif; font-size: 56px; margin: 0 0 16px; }
+    .sub { font-size: 20px; max-width: 640px; margin: 0 auto 32px; opacity: 0.92; }
+    .ctas { display: flex; gap: 12px; justify-content: center; }
+    .btn {
+      border: 0; border-radius: 16px; padding: 14px 22px; font-weight: 600;
+      font-family: Inter, system-ui, sans-serif; cursor: pointer; text-decoration: none;
+    }
+    .btn-primary { background: #fff; color: #6366f1; }
+    .btn-ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.5); }
+    .features {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; max-width: 1080px; margin: 0 auto;
+    }
+    .card {
+      background: #f9fafb; border-radius: 16px; padding: 32px; text-align: center;
+    }
+    .icon { width: 40px; height: 40px; margin: 0 auto 16px; color: #6366f1; }
+    .logos { display: flex; justify-content: center; gap: 32px; opacity: 0.5; }
+    footer { text-align: center; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Welcome to NexusForge</h1>
+    <p class="sub">Unleash the power of next-generation workflows — seamless collaboration that empowers every team to ship faster — without the busywork.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#start">Get started</a>
+      <a class="btn btn-ghost" href="#learn">Learn more</a>
+    </div>
+  </header>
+  <section>
+    <div class="features">
+      <article class="card feature">
+        <svg class="icon lucide" data-lucide="zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <h3>Lightning fast</h3>
+        <p>Empower your org with a seamless platform — built for the next-generation of work.</p>
+      </article>
+      <article class="card feature">
+        <svg class="icon lucide" data-lucide="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h3>Enterprise ready</h3>
+        <p>Unleash secure, all-in-one control so you can focus on what matters — your customers.</p>
+      </article>
+      <article class="card feature">
+        <svg class="icon lucide" data-lucide="sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/></svg>
+        <h3>AI-powered</h3>
+        <p>A seamless copilot that empowers everyone — from first draft to final ship.</p>
+      </article>
+    </div>
+  </section>
+  <section>
+    <div class="logos">Trusted by teams everywhere — Acme — Globex — Initech — Umbrella</div>
+  </section>
+  <footer>© 2026 NexusForge. All rights reserved.</footer>
+</body>
+</html>

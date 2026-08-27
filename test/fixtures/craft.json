@@ -1,0 +1,39 @@
+{
+  "url": "file:///demo/craft.html",
+  "title": "Harbour Clock Co. — tide instruments, brass and paper",
+  "headings": [
+    { "tag": "h1", "text": "Clocks that still know the tide." }
+  ],
+  "paragraphs": [
+    "Harbour Clock Co. builds mechanical tide instruments for people who live with the water, not next to a dashboard."
+  ],
+  "buttons": ["The workshop", "Write to the workshop"],
+  "links": ["mailto:bench@harbourclock.example"],
+  "bodyText": "Est. 1974 Victoria Harbour Clocks that still know the tide. Harbour Clock Co. builds mechanical tide instruments. Each face is engraved in the same loft above the ferry repair yard. The No. 12 desk tide clock. Write to the workshop.",
+  "computedFonts": ["Iowan Old Style, Palatino Linotype, Palatino, Georgia, Times New Roman, serif"],
+  "declaredFonts": ["Iowan Old Style, Palatino Linotype, Palatino, Georgia, Times New Roman, serif", "SF Mono, Source Code Pro, ui-monospace, Menlo, monospace"],
+  "googleFonts": [],
+  "backgrounds": ["rgb(243, 234, 216)", "rgb(26, 20, 16)"],
+  "colors": ["rgb(26, 20, 16)", "rgb(155, 45, 31)", "rgb(176, 141, 87)"],
+  "radii": ["0px"],
+  "sectionPaddings": [],
+  "animations": [],
+  "keyframes": [],
+  "hasLucide": false,
+  "svgIconCount": 0,
+  "featureCardCount": 0,
+  "equalWidthCards": false,
+  "heroTextAlign": "start",
+  "samples": [
+    {
+      "selector": "h1",
+      "fontFamily": "Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif",
+      "color": "rgb(26, 20, 16)",
+      "background": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textAlign": "start",
+      "gridTemplateColumns": "none"
+    }
+  ]
+}

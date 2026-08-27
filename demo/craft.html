@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harbour Clock Co. — tide instruments, brass and paper</title>
+  <style>
+    :root {
+      --paper: #f3ead8;
+      --ink: #1a1410;
+      --rust: #9b2d1f;
+      --brass: #b08d57;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink); }
+    body {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+      line-height: 1.45;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 36px 80px; }
+    nav {
+      display: flex; justify-content: space-between; align-items: baseline;
+      border-bottom: 1px solid var(--ink); padding-bottom: 8px; font-size: 13px;
+      font-family: "SF Mono", "Source Code Pro", ui-monospace, Menlo, monospace;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    nav a { color: var(--ink); text-decoration: none; }
+    .mast {
+      display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 48px;
+      padding: 48px 0 24px; align-items: end;
+    }
+    h1 {
+      font-weight: 400; font-size: 64px; line-height: 0.95; margin: 0;
+      font-style: italic;
+    }
+    .note {
+      font-size: 14px; border-left: 2px solid var(--rust); padding-left: 14px;
+      margin: 0;
+    }
+    .lede { font-size: 22px; max-width: 38ch; margin: 8px 0 0; }
+    .rule { border: 0; border-top: 3px double var(--ink); margin: 32px 0; }
+    .split { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+    ol { margin: 0; padding-left: 1.2em; }
+    ol li { margin-bottom: 1em; }
+    aside {
+      background: #1a1410; color: var(--paper); padding: 22px 20px;
+      transform: rotate(-1.2deg);
+    }
+    aside p { margin: 0; font-size: 15px; }
+    aside span { display: block; font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: 11px; color: var(--brass); margin-bottom: 8px; letter-spacing: 0.08em; }
+    .cta {
+      display: inline-block; margin-top: 28px; color: var(--rust);
+      font-size: 18px; text-decoration: underline; text-underline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <span>Est. 1974 · Victoria Harbour</span>
+      <a href="#workshop">The workshop</a>
+    </nav>
+    <div class="mast">
+      <div>
+        <h1>Clocks that still know the tide.</h1>
+        <p class="lede">Harbour Clock Co. builds mechanical tide instruments for people who live with the water, not next to a dashboard.</p>
+      </div>
+      <p class="note">Each face is engraved in the same loft above the ferry repair yard. Brass, enamel, and a paper manual stitched with linen.</p>
+    </div>
+    <hr class="rule" />
+    <div class="split">
+      <ol>
+        <li>The No. 12 desk tide clock — 140mm brass bezel, two hands, a lunar cam you can hear at slack water.</li>
+        <li>The wall regulator — a long-case movement with a second-hand that pauses, then catches up, like a real harbour clock should.</li>
+      </ol>
+      <aside>
+        <span>FROM THE BENCH</span>
+        <p>We will not add a companion app. If you want the height of the next high water, look at the cam.</p>
+      </aside>
+    </div>
+    <a class="cta" href="mailto:bench@harbourclock.example">Write to the workshop</a>
+  </div>
+</body>
+</html>

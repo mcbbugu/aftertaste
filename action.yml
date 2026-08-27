@@ -1,0 +1,38 @@
+name: aftertaste
+description: Audit a URL for AI-slop UI and comment the score on the pull request.
+inputs:
+  url:
+    required: true
+    description: Preview URL to audit
+  fail-under:
+    required: false
+    default: "0"
+    description: Fail the step when score is below this number
+  github-token:
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+    - shell: bash
+      env:
+        AFTERTASTE_URL: ${{ inputs.url }}
+        AFTERTASTE_FAIL: ${{ inputs.fail-under }}
+      run: |
+        npx --yes aftertaste@0.1.0 "$AFTERTASTE_URL" --json --fail-under "$AFTERTASTE_FAIL" | tee aftertaste.json
+    - shell: bash
+      if: github.event_name == 'pull_request'
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        URL: ${{ inputs.url }}
+        PR: ${{ github.event.pull_request.number }}
+      run: |
+        python3 - << 'PY'
+        import json, os, subprocess
+        data = json.load(open("aftertaste.json"))
+        body = f"aftertaste **{data['score']}/100** ({data['label']}) on {os.environ['URL']}"
+        subprocess.check_call(["gh", "pr", "comment", os.environ["PR"], "--body", body])
+        PY

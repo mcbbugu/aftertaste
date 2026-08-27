@@ -1,0 +1,62 @@
+{
+  "url": "file:///demo/slop.html",
+  "title": "NexusForge — The Future of Productivity",
+  "headings": [
+    { "tag": "h1", "text": "Welcome to NexusForge" },
+    { "tag": "h3", "text": "Lightning fast" },
+    { "tag": "h3", "text": "Enterprise ready" },
+    { "tag": "h3", "text": "AI-powered" }
+  ],
+  "paragraphs": [
+    "Unleash the power of next-generation workflows — seamless collaboration that empowers every team to ship faster — without the busywork."
+  ],
+  "buttons": ["Get started", "Learn more"],
+  "links": [],
+  "bodyText": "Welcome to NexusForge Unleash the power of next-generation workflows — seamless collaboration that empowers every team — Lightning fast Empower your org with a seamless platform — Enterprise ready Unleash secure control — AI-powered A seamless copilot that empowers everyone — Trusted by teams everywhere — Acme — Globex",
+  "computedFonts": ["Inter, system-ui, sans-serif"],
+  "declaredFonts": ["Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif"],
+  "googleFonts": ["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"],
+  "backgrounds": ["linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%) / rgba(0, 0, 0, 0)", "rgb(249, 250, 251)"],
+  "colors": ["rgb(255, 255, 255)", "rgb(17, 24, 39)", "rgb(99, 102, 241)"],
+  "radii": ["16px"],
+  "sectionPaddings": ["96px 24px", "96px 24px", "96px 24px"],
+  "animations": ["fadeIn 0.8s"],
+  "keyframes": ["@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }"],
+  "hasLucide": true,
+  "svgIconCount": 3,
+  "featureCardCount": 3,
+  "equalWidthCards": true,
+  "heroTextAlign": "center",
+  "samples": [
+    {
+      "selector": "header.hero",
+      "fontFamily": "Inter, system-ui, sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%) / rgb(102, 126, 234)",
+      "borderRadius": "0px",
+      "padding": "96px 24px",
+      "textAlign": "center",
+      "gridTemplateColumns": "none"
+    },
+    {
+      "selector": "div.features",
+      "fontFamily": "Inter, system-ui, sans-serif",
+      "color": "rgb(17, 24, 39)",
+      "background": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "textAlign": "start",
+      "gridTemplateColumns": "1fr 1fr 1fr"
+    },
+    {
+      "selector": "article.card",
+      "fontFamily": "Inter, system-ui, sans-serif",
+      "color": "rgb(17, 24, 39)",
+      "background": "rgb(249, 250, 251)",
+      "borderRadius": "16px",
+      "padding": "32px",
+      "textAlign": "center",
+      "gridTemplateColumns": "none"
+    }
+  ]
+}

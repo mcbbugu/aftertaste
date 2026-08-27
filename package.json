@@ -1,0 +1,52 @@
+{
+  "name": "aftertaste",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "taste-skill tells the agent to have taste. aftertaste checks whether it did.",
+  "author": "mcbbugu",
+  "files": [
+    "dist",
+    "demo",
+    "action.yml",
+    "src/collect.browser.js"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "cli",
+    "design",
+    "ui",
+    "audit",
+    "playwright",
+    "taste",
+    "slop"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcbbugu/aftertaste.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcbbugu/aftertaste/issues"
+  },
+  "homepage": "https://github.com/mcbbugu/aftertaste#readme",
+  "dependencies": {
+    "picocolors": "^1.1.1",
+    "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "tsc && cp src/collect.browser.js dist/",
+    "test": "tsx --test test/score.test.ts",
+    "prepare": "tsc",
+    "start": "tsx src/cli.ts"
+  },
+  "bin": {
+    "aftertaste": "dist/cli.js"
+  }
+}

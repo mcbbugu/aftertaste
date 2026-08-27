@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.aftertaste/
+coverage/
+.DS_Store
+*.tgz
+.env
+.env.*
