@@ -1,11 +1,12 @@
 # aftertaste
 
+English · [中文](README.zh.md)
+
 taste-skill tells the agent to have taste. **aftertaste** checks whether it did.
 
 A Playwright screenshot plus a deterministic slop audit. No API key. Score 100 is human and distinct; 0 is peak template.
 
     npx aftertaste http://localhost:5173
-
 
 ![CLI report](docs/cli.png)
 
@@ -41,10 +42,6 @@ Evidence is actual CSS and copy from the page:
 
 `--json` prints the result as JSON. `--fail-under N` exits 1 when the score is below N (CI).
 
-## License
-
-MIT
-
 ## Command
 
     aftertaste http://localhost:5173
@@ -56,12 +53,8 @@ Prefix with npx. Node 20+. Install Chromium via Playwright once.
 
 Scorer tests live in `test/score.test.ts` (fixtures, no network).
 
----
-
-## 中文
-
-aftertaste 是命令行验收：打开页面、截图、用启发式规则给「AI 套模板」打分。不需要模型 API。
-
-taste-skill 是生成前的设计约束；aftertaste 是生成后的检查。对预览地址跑一次，低分会列出真实的字体、色值和文案，而不是「请更有品味」。
-
 See `.github/workflows/aftertaste.yml` for a workflow that comments the score on a pull request. `action.yml` is a composite wrapper.
+
+## License
+
+MIT
