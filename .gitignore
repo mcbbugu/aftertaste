@@ -6,3 +6,5 @@ coverage/
 *.tgz
 .env
 .env.*
+.agents/
+skills-lock.json
