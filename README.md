@@ -7,7 +7,13 @@ A Playwright screenshot plus a deterministic slop audit. No API key. Score 100 i
     npx aftertaste http://localhost:5173
 
 
-![aftertaste on a generic AI landing page](docs/slop.png)
+![CLI report](docs/cli.png)
+
+![slop fixture](docs/slop.png)
+
+The control page, `demo/craft.html`, scores as distinct:
+
+![craft fixture](docs/craft.png)
 
 ## What it is
 

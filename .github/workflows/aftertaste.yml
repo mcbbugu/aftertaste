@@ -18,4 +18,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PR: ${{ github.event.pull_request.number }}
-        run: echo skip
+        run: gh pr comment "$PR" --body "aftertaste example: run the CLI on your preview URL, then comment the JSON score. See action.yml."

@@ -41,9 +41,9 @@
     "typescript": "^5.7.2"
   },
   "scripts": {
-    "build": "tsc && cp src/collect.browser.js dist/",
+    "build": "tsc && cp src/collect.browser.js dist/collect.browser.js",
     "test": "tsx --test test/score.test.ts",
-    "prepare": "tsc",
+    "prepare": "tsc && cp src/collect.browser.js dist/collect.browser.js",
     "start": "tsx src/cli.ts"
   },
   "bin": {
