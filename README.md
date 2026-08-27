@@ -8,13 +8,13 @@ A Playwright screenshot plus a deterministic slop audit. No API key. Score 100 i
 
     npx aftertaste http://localhost:5173
 
-![CLI report](docs/cli.png)
+![CLI report](https://cdn.jsdelivr.net/gh/mcbbugu/aftertaste@main/docs/cli.png)
 
-![slop fixture](docs/slop.png)
+![slop fixture](https://cdn.jsdelivr.net/gh/mcbbugu/aftertaste@main/docs/slop.png)
 
 The control page, `demo/craft.html`, scores as distinct:
 
-![craft fixture](docs/craft.png)
+![craft fixture](https://cdn.jsdelivr.net/gh/mcbbugu/aftertaste@main/docs/craft.png)
 
 ## What it is
 

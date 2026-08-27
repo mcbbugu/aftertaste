@@ -8,13 +8,13 @@ Playwright 截图 + 确定性 slop 审计。不需要 API key。100 分是人做
 
     npx aftertaste http://localhost:5173
 
-![CLI 报告](docs/cli.png)
+![CLI 报告](https://cdn.jsdelivr.net/gh/mcbbugu/aftertaste@main/docs/cli.png)
 
-![套模板样例](docs/slop.png)
+![套模板样例](https://cdn.jsdelivr.net/gh/mcbbugu/aftertaste@main/docs/slop.png)
 
 对照页 `demo/craft.html` 会打成有辨识度：
 
-![手工对照](docs/craft.png)
+![手工对照](https://cdn.jsdelivr.net/gh/mcbbugu/aftertaste@main/docs/craft.png)
 
 ## 这是什么
 
